@@ -1,7 +1,8 @@
-# ½ÇÇà¹æ¹ý
-- node.js ¼³Ä¡ : https://nodejs.org/en/
-- ¼³Ä¡ÇÏ±â  : CMD> npm i
-- È­¸é ¶ç¿ì±â : CMD> npm start
+# ì‹¤í–‰ë°©ë²•
+- node.js ì„¤ì¹˜ : https://nodejs.org/en/
+- ì„¤ì¹˜í•˜ê¸°  : CMD> npm i
+- í™”ë©´ ë„ìš°ê¸° : CMD> npm start
 
-# ¼³¸í : 1ºÎÅÍ 50±îÁö ¼ýÀÚ¸¦ Â÷·Ê·Î ´©¸£¸é µË´Ï´Ù. ±â·ÏÀ» ÀúÀåÇÏ´Â ±â´ÉÀº ¾ø½À´Ï´Ù.
+# ì„¤ëª…
+- 1ë¶€í„° 50ê¹Œì§€ ìˆ«ìžë¥¼ ì°¨ë¡€ë¡œ ëˆ„ë¥´ë©´ ë©ë‹ˆë‹¤. ê¸°ë¡ì„ ì €ìž¥í•˜ëŠ” ê¸°ëŠ¥ì€ ì—†ìŠµë‹ˆë‹¤.
 
