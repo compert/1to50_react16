@@ -1,14 +1,13 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const webpack = require('webpack');
 
 module.exports = {
   entry: {
     app: './src/index.js'
   },
   devServer: {
-    contentBase: './dist',
+    static: './dist',
     hot: true
   },
   module: {
@@ -25,7 +24,9 @@ module.exports = {
           use: [
               {
                   loader: "html-loader",
-                  options: {minimize: true}
+                  options: {
+                    minimize: true
+                  }
               }
           ]
       },
@@ -36,7 +37,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
@@ -44,8 +45,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ]
 };
